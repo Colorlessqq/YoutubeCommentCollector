@@ -1,3 +1,41 @@
-# Youtube Comment Collector
-#### Video Demo:  <https://www.youtube.com/watch?v=ARHlPxVeTGg&ab_channel=Ahmet>
-#### Description: Sometimes youtubers need their video comments to varios reasons like giveaway, followers idea about video and many much reason. So i decided to make an app for that, in this app you can chose many options about comments that you want for example it have to have at least 100 likes or its have to include some specific text like 'Hello' and some other options. I have used PyQt5 to create a vissual application and selenium for getting comments from given youtube link. I have some error handleres like if you give some link other youtube it will reject it or some comments are unable save because of texting program will say how many of comments are not saved during errors. Also you can select how will it save the comment like just save comment or save comment and username and likes of comment. And lastly you can select save as screenshots which will save all coments as screenshot. Well your bot says to short for this description so i want to talk about some problems that i encountered and i how solve them. When i was trying to get comment from the youtube video for load comments i need to scrool down page but there is nothing in selenium for that so i ask ChatGPT new raising Chat Ai to help and it show me some code for do that with using selenium.execute_sciript() method and now i can scroll down page well your bot still says it's not enogh so i want to talk about idea of bringing comments from youtube i hope its usefull i am not really good about ingenuity but this is not so bad, i think... i saw a lot of youtuber needs to interact with comments and i hope this will them.
+# YouTube Comments Extractor
+
+This application helps YouTubers gather comments from their videos for various reasons, such as giveaways, gaining insights from followers, and more. The app offers several options to filter and save comments according to your needs.
+
+#### Video Demo:  [https://www.youtube.com/watch?v=ARHlPxVeTGg&ab_channel=Ahmet](https://www.youtube.com/watch?v=ARHlPxVeTGg&ab_channel=Ahmet) (My English wasn't at its best while I was recording this)
+
+## Features
+
+1. **Filter Comments by Likes:** 
+   - Choose to extract comments that have a minimum number of likes (e.g., at least 100 likes).
+
+2. **Filter Comments by Text:**
+   - Specify text that comments must include (e.g., comments containing "Hello").
+
+3. **Error Handling:**
+   - Invalid Links: The app will reject links that are not from YouTube.
+   - Save Errors: The app will notify you of how many comments were not saved due to errors.
+
+4. **Save Options:**
+   - Save Comments Only: Save only the text of the comments.
+   - Save Comments with Details: Save the comment text, username, and the number of likes.
+   - Save as Screenshots: Save all comments as screenshots.
+
+## Technology Stack
+
+- **PyQt5:** Used to create the visual interface of the application.
+- **Selenium:** Used to retrieve comments from the given YouTube link.
+
+## Usage
+
+1. **Input YouTube Link:** Enter the YouTube video link from which you want to extract comments.
+2. **Set Filters:** Choose the filters based on likes and specific text content.
+3. **Select Save Options:** Decide how you want to save the comments (text only, with details, or as screenshots).
+4. **Run Extraction:** The app will process the comments and save them according to your selected options.
+
+## Error Handling
+
+- The app ensures that only valid YouTube links are processed.
+- If there are errors while saving comments, the app will inform you about the number of comments that could not be saved.
+
+This project is designed to simplify the process of extracting and saving YouTube comments, making it easier for content creators to manage their audience interactions.
